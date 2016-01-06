@@ -1,0 +1,38 @@
+.list-enter {
+  opacity: 0.00001;
+}
+
+.list-enter.list-enter-active {
+  opacity: 1;
+  transition: opacity 290ms ease-in;
+}
+
+.list-leave {
+  opacity: 1;
+}
+
+.list-leave.list-leave-active {
+  opacity: 0.00001;
+  transition: opacity 290ms ease-out;
+}
+
+.container { animation: fadeIn 2s; }
+.fade-in-area { animation: fadeOut 2s; opacity: 0; }
+
+@keyframes fadeOut {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}

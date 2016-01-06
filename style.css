@@ -1,0 +1,265 @@
+/* latin */
+@font-face {
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Abel'), local('Abel-Regular'), url(fonts/Abel.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body { 
+	width: 100%;
+	height: 100%;
+	color: #eee;
+	font-family: Abel;
+	margin: 0px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-attachment: fixed;
+  text-shadow: 0 1px 4px #333;
+}
+
+.fade-in-area {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background-color: #fff;
+}
+
+.darken-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.2);
+}
+
+/* List Styles */
+input { background: transparent; border: none; color: #eee; border-bottom: solid 3px #fff; font-size: 22pt; font-family: Abel; text-shadow: 0 1px 0 #555; }
+input:focus { outline:none; }
+
+.container {
+	/*position: relative; /* needed for footer positioning*/
+	/*height: auto !important; /* real browsers */
+	min-height: 100%; /* real browsers */
+  margin-bottom: -20px;
+}
+
+.container:after {
+  content: "";
+  display: block;
+}
+
+.nav { padding: 0px 6px; }
+
+.nav, .container:after {
+  height: 20px;
+}
+
+div.list { 
+	width: 600px;
+	margin: auto; 
+	padding-top: 100px;
+	font-size: 19pt;
+}
+
+.greeting { font-size: 0.7em; color: #ddd; margin-bottom: 60px; }
+
+input.addItem { width: 100%; margin-bottom: 24px; font-weight: 800; text-shadow: 0 1px 4px #333; }
+
+ul { list-style-type: none; margin-left: 0; padding-left: 0; font-size: 0.9em; }
+ul li { border-bottom: solid 1px #ccc; margin: 14px 0; padding-bottom: 8px; height: 29px; }
+
+ul li:hover { text-decoration: line-through; }
+
+.title { margin-bottom: 0.8em; align-self: center; }
+
+/* Philosopher Styles */
+/*.philosopher { position: fixed; top: 10px; left: 10px; }*/
+.philosopher { 
+  position: absolute;
+	width: 600px; 
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 124px;
+  bottom: 124px;
+  min-height: 364px;
+}
+.philosopher .photo { display: none; margin-left: 6px; background-image: url('philosopher images/Heidegger.jpg'); width: 60px; height: 60px; background-size: cover; border-radius: 50%; margin-bottom: 20px; }
+
+/* Share */
+.share { position: fixed; top: 10px; left: 10px; font-size: 13px; z-index: 90; }
+
+#quote-area { width: 600px; margin: auto; padding-bottom: 50px; }
+.quote{ padding: 0; margin-top: 20px; font-size: 26px; quotes:"\201C""\201D"; text-align: center; width: 600px; }
+.author{ text-align: center; font-size: 0.75em; display: block; }
+
+/* Make it responsive! */
+@media only screen and (max-width: 1000px) {
+	h1 { font-size: 4em; }
+}
+
+@media only screen and (max-width: 500px) {
+	h1 { font-size: 2em; }
+}
+
+/* Something / Nothing Toggle */
+label.toggle {
+  padding: 0px 10px;
+  color: #ccc;
+}
+
+input[type="radio"]:checked + label {
+  color: #eee;
+  font-weight: bold;
+}
+
+input[type="radio"].toggle {
+	display: none;
+}
+
+.toggle-button { 
+    display: inline-block;
+    background-color: #000;
+    width: 30px;
+    border-radius: 12px;
+    margin-top: 4px;
+    border: solid 1px #444;
+    vertical-align: text-top;
+}
+
+.toggle-button-dot {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  transform:translateX(0px);
+  transition: transform 160ms ease-out;
+}
+
+.off { transform:translateX(18px); }
+
+.greeting { float: left; margin-right: 100px; }
+.toggle-area { 
+  margin-left: 30px;
+  font-size: 0.7em;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Attribution */
+.attribution a { color: #fff; text-decoration: none; }
+.attribution a:hover { color: #fff; text-decoration: underline; }
+.attribution { font-size: 13px; z-index: 90; float: left; }
+
+/* Logo! */
+.logo {
+  text-decoration: none;
+  color: #fff;
+  float: right;
+}
+
+.logo img { width: 100px; }
+
+/* Social Stuff */
+.twitter-share-button {
+  background-image: url(images/icons/twitter-share.svg);
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#toggle-off + label { padding: 0px 0px 0px 10px; }
+
+/* Fade Animations */
+.section { width: 600px; margin-top: 74px; opacity: 0.0; visibility: hidden; transition: visibility 500ms ease-out, opacity 500ms ease-out; }
+.quoteSection {
+  position: absolute;
+  bottom: 170px;
+  top: 100px;
+  display: flex;
+  align-items: center;
+}
+.something .listSection { opacity: 1.0; visibility: visible; }
+.nothing .quoteSection { opacity: 1.0; visibility: visible; } 
+
+/* Mobile Last Design */
+@media screen and (max-width: 620px) {
+  div.list { width: 100%; }
+  .section { width: 95%; }
+  .listSection { margin-top: 40px; }
+  .container { padding: 0px 10px; }
+  .addItem { margin-top: 0px; }
+  .philosopher { 
+    width: 100%;
+    position: absolute;
+    display: block;
+    top: 200px;
+    left:0px;
+  }
+  .quote {
+    width: auto;
+    padding: 10px;
+    /*margin-top: 100px;*/
+  }
+  .greeting {
+    float: none;
+    margin-bottom: 10px;
+  }
+  .toggle-area {
+    float: none;
+    margin-left: 0px;
+  }
+  #toggle-on + label { padding-left: 0px; }
+}
+
+/* Page Fade In */
+.list-enter {
+  opacity: 0.00001;
+}
+
+.list-enter.list-enter-active {
+  opacity: 1;
+  transition: opacity 290ms ease-in;
+}
+
+.list-leave {
+  opacity: 1;
+}
+
+.list-leave.list-leave-active {
+  opacity: 0.00001;
+  transition: opacity 290ms ease-out;
+}
+
+.container { animation: fadeIn 1.5s; }
+.fade-in-area { animation: fadeOut 1.5s; opacity: 0; visibility: hidden; }
+
+@keyframes fadeOut {
+    from {
+        opacity:1;
+        visibility: visible;
+    }
+    to {
+        opacity:0;
+        visibility: hidden;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}

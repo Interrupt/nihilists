@@ -1,0 +1,10 @@
+{
+  "name": "nihi-lists",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "imagemin-mozjpeg": "^1.0.0",
+    "grunt-image-resize": "^1.0.0"
+  }
+}
