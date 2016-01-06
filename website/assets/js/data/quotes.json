@@ -1,0 +1,126 @@
+{
+	"quotes": [
+		{
+			"philosopher_id": "1",
+			"quote": "Hope in reality is the worst of all evils because it prolongs the torments of man."
+		},
+		{
+			"philosopher_id": "1",
+			"quote": "Battle not with monsters, lest ye become a monster, and if you gaze into the abyss, the abyss gazes also into you."
+		},
+		{
+			"philosopher_id": "1",
+			"quote": "Regarding life, the wisest men of all ages have judged alike: it is worthless."
+		},
+		{
+			"philosopher_id": "1",
+			"quote": "To live is to suffer. To survive is to find some meaning in suffering."
+		},
+		{
+			"philosopher_id": "1",
+			"quote": "There is not enough love and goodness in the world to permit giving any of it away to imaginary beings."
+		},
+		{
+			"philosopher_id": "1",
+			"quote": "You have your way. I have my way. As for the right way, the correct way, and the only way, it does not exist."
+		},
+		{
+			"philosopher_id": "1",
+			"quote": "Essence really is an imperfect tense that never becomes present."
+		},
+		{
+			"philosopher_id": "2",
+			"quote": "The more the universe seems comprehensible, the more it seems pointless."
+		},
+		{
+			"philosopher_id": "3",
+			"quote": "Live as long as you please, you will strike nothing off the time you will have to spend dead"
+		},
+		{
+			"philosopher_id": "4",
+			"quote": "The modern mind is in complete disarray. Knowledge has stretched itself to the point where neither the world nor our intelligence can find any foot-hold. It is a fact that we are suffering from nihilism."
+		},
+		{
+			"philosopher_id": "4",
+			"quote": "I opened myself to the gentle indifference of the world."
+		},
+		{
+			"philosopher_id": "4",
+			"quote": "Should I kill myself, or have a cup of coffee?"
+		},
+		{
+			"philosopher_id": "4",
+			"quote": "A nihilist is not one who believes in nothing, but one who does not believe in what exists."
+		},
+		{
+			"philosopher_id": "4",
+			"quote": "I can feel this heart inside me and I conclude it exists. I can touch this world and I also conclude that it exists. All knowledge ends at this point. The rest is hypothesis."
+		},
+		{
+			"philosopher_id": "5",
+			"quote": "Having 9 lives would be great if they weren't mundane and devoid of meaning."
+		},
+		{
+			"philosopher_id": "6",
+			"quote": "Life is a long preparation for something that never happens."
+		},
+		{
+			"philosopher_id": "7",
+			"quote": "Change is neither good nor bad, it simply is."
+		},
+		{
+			"philosopher_id": "8",
+			"quote": "I am a fool with with a heart but no brains, and you are a fool with brains but no heart; and we're both unhappy, and we both suffer."
+		},
+		{
+			"philosopher_id": "9",
+			"quote": "Why are there beings at all, instead of nothing?"
+		},
+		{
+			"philosopher_id": "10",
+			"quote": "Since my earliest childhood a barb of sorrow has lodged in my heart."
+		}
+	],
+	"philosophers": {
+		"1": {
+			"image": "Nietzsche.jpg",
+			"name": "Nietzsche"
+		},
+		"2": {
+			"image": "Nietzsche.jpg",
+			"name": "Steven Weinberg"	
+		},
+		"3": {
+			"image": "Nietzsche.jpg",
+			"name": "Michel de Montaigne"
+		},
+		"4": {
+			"image": "Nietzsche.jpg",
+			"name": "Camus"
+		},
+		"5": {
+			"image": "Nietzsche.jpg",
+			"name": "Grumpy Cat"	
+		},
+		"6": {
+			"image": "Nietzsche.jpg",
+			"name": "Yeats"	
+		},
+		"7": {
+			"image": "Nietzsche.jpg",
+			"name": "Don Draper"
+		},
+		"8": {
+			"image": "Nietzsche.jpg",
+			"name": "Dostoyevsky"
+		},
+		"9": {
+			"image": "Nietzsche.jpg",
+			"name": "Heiddeger"
+		},
+		"10": {
+			"image": "Nietzsche.jpg",
+			"name": "Kierkegaard"
+		}
+	}
+}
