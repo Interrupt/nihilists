@@ -32,7 +32,7 @@ var QuoteArea = React.createClass({
 	},
 	componentDidMount: function () {
 		$.get("js/data/quotes.json", (function (result) {
-			var data = JSON.parse(result);
+			var data = result;
 
 			Math.seedrandom(makeDailySeed());
 
